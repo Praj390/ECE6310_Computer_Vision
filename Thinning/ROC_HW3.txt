@@ -1,0 +1,63 @@
+%% Prajval Vaskar
+% Computer Vision
+% Lab 03 - Optical Character Recognition
+% ROC curve plot
+
+clear all;
+clc;
+close all;
+M = csvread('data.csv',1,0);
+X = M(:,7);
+X =X';
+Y = M(:,6);
+Y = Y';
+T = M(:,1);
+plot(X',Y','k','LineWidth',1);
+% axis equal
+% xlim([-0.05 1.05]);ylim([-0.05 1.05]);
+xlabel("False positive rate (FPR)");
+ylabel("True positive rate (TPR)")
+hold on
+% Finding the optimal point
+
+for i = 1:length(X)
+   dist(i) = sqrt((1-Y(i))^2+(-X(i))^2);    
+end
+[min,I] = min(dist);
+plot(X(I),Y(I),"x",'LineWidth',2)
+ylim([0 1])
+legend("ROC curve", "Optimal point")
+str = {'optimal point'};
+text(0.04,0.90,str,'FontSize',10);
+t = text(0.04,0.86,['FPR = ',num2str(X(I))]);
+t.FontSize = 9;
+t = text(0.04,0.82,['TPR = ',num2str(Y(I))]);
+t.FontSize = 9;
+title("ROC curve from threshold 170 to 255");
+xlabel("False Positive Rate");
+ylabel("True positive Rate");
+legend('ROC curve','Optimum point');
+xlim([0,0.3]);
+% ylim([0.8,1]);
+
+%%
+
+x = X(170:255);
+y = Y(170:255);
+t = T(170:255);
+
+figure()
+plot(x,y,'k','LineWidth',1);
+hold on
+plot(x(30),y(30),"x",'LineWidth',2)
+title("ROC curve from threshold 0 to 255");
+xlabel("False Positive Rate");
+ylabel("True positive Rate");
+legend('ROC curve');
+str = {'optimal point'};
+text(0.04,0.90,str,'FontSize',10);
+t = text(0.04,0.86,['FPR = ',num2str(X(I))]);
+t.FontSize = 9;
+t = text(0.04,0.82,['TPR = ',num2str(Y(I))]);
+t.FontSize = 9;
+

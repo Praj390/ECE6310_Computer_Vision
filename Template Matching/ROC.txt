@@ -1,0 +1,56 @@
+%% Prajval Vaskar
+% Computer Vision
+% Lab 02 - Optical Character Recognition
+% ROC curve plot
+
+%TP_FP.txt file is created using C code of letter recognition algorithm.
+filename = 'TP_FP.txt';
+delimiterIn = ' ';
+headerlinesIn = 1;
+A = importdata(filename,delimiterIn,headerlinesIn);
+
+Data = A.data;
+T = Data(:,1);
+TPR = Data(:,4);
+FPR = Data(:,5);
+x = FPR(170:255);
+y = TPR(170:255);
+t = T(170:255);
+
+figure()
+plot(FPR,TPR,'k','LineWidth',1);
+title("ROC curve from threshold 0 to 255");
+xlabel("False Positive Rate");
+ylabel("True positive Rate");
+legend('ROC curve');
+
+
+% Optimal point 
+for i= 1:length(x)
+    dist(i) = sqrt((x(i)-0)^2 + (y(i)-1)^2);
+end
+min_dist = min(dist);
+min_index = find(dist == min(dist(:)));
+%Optimal point FRP
+optimal_x = x(min_index);
+%optimal point TRP
+optimal_y = y(min_index);
+%Optimal Threshold
+optimal_T = t(min_index);
+
+figure()
+plot(x,y,'k','LineWidth',1);
+hold on
+plot(optimal_x,optimal_y,'x','MarkerSize',9,'LineWidth',1);
+str = {'optimal point'};
+text(0.07,0.96,str,'FontSize',10);
+t = text(0.07,0.94,['FPR = ',num2str(optimal_x)]);
+t.FontSize = 9;
+t = text(0.07,0.95,['TPR = ',num2str(optimal_y)]);
+t.FontSize = 9;
+title("ROC curve from threshold 170 to 255");
+xlabel("False Positive Rate");
+ylabel("True positive Rate");
+legend('ROC curve','Optimum point');
+xlim([0,0.5]);
+ylim([0.8,1]);
