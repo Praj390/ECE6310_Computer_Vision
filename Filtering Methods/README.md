@@ -17,17 +17,17 @@ C. Separable filter with sliding window
 This can be done by combining separable filter and sliding window. As we know during
 convolution the mean filter running in for loop with increment of one.
 
-Original Image
+## Original Image
 
 ![](https://github.com/Praj390/ECE6310_Computer_Vision/blob/master/Filtering%20Methods/bridge.ppm)
 
-Smoothened image after applying 2D mean filter.
+## Smoothened image after applying 2D mean filter.
 ![](https://github.com/Praj390/ECE6310_Computer_Vision/blob/master/Filtering%20Methods/smoothed_2D_filter.ppm)
 
-Smoothened image after applying 1D mean separable filter.
+## Smoothened image after applying 1D mean separable filter.
 ![](https://github.com/Praj390/ECE6310_Computer_Vision/blob/master/Filtering%20Methods/smoothed_1D_filter.ppm)
 
-Smoothened image after applying 1D sliding filter.
+## Smoothened image after applying 1D sliding filter.
 ![](https://github.com/Praj390/ECE6310_Computer_Vision/blob/master/Filtering%20Methods/smoothed_1D_sliding_filter.ppm)
 
 We can see all images are exactly the same after smoothing
