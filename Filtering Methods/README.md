@@ -19,16 +19,16 @@ convolution the mean filter running in for loop with increment of one.
 
 Original Image
 
-![alt text](https://github.com/Praj390/ECE6310_Computer_Vision/blob/master/Filtering%20Methods/bridge.ppm)
+https://github.com/Praj390/ECE6310_Computer_Vision/blob/master/Filtering%20Methods/bridge.ppm
 
 Smoothened image after applying 2D mean filter.
-![alt text](https://github.com/Praj390/ECE6310_Computer_Vision/blob/master/Filtering%20Methods/smoothed_2D_filter.ppm)
+https://github.com/Praj390/ECE6310_Computer_Vision/blob/master/Filtering%20Methods/smoothed_2D_filter.ppm
 
 Smoothened image after applying 1D mean separable filter.
-![alt text](https://github.com/Praj390/ECE6310_Computer_Vision/blob/master/Filtering%20Methods/smoothed_1D_filter.ppm)
+https://github.com/Praj390/ECE6310_Computer_Vision/blob/master/Filtering%20Methods/smoothed_1D_filter.ppm
 
 Smoothened image after applying 1D sliding filter.
-![alt text](https://github.com/Praj390/ECE6310_Computer_Vision/blob/master/Filtering%20Methods/smoothed_1D_sliding_filter.ppm)
+https://github.com/Praj390/ECE6310_Computer_Vision/blob/master/Filtering%20Methods/smoothed_1D_sliding_filter.ppm
 
 We can see all images are exactly the same after smoothing
 
