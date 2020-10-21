@@ -4,6 +4,6 @@
 2. Different selection for color.
 3. Region growing based on intensity difference and centroid distance.
 4. Automatic mode and stepwise mode with reset option.
-5 .Step can be incremented by pressing 'j'.
+5. Step can be incremented by pressing 'j'.
 
 Programming is done in Visual Studio with C programming
