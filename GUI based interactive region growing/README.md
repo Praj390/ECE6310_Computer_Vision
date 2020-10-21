@@ -7,3 +7,6 @@
 5. Step can be incremented by pressing 'j'.
 
 Programming is done in Visual Studio with C programming
+
+# Demo
+![](https://github.com/Praj390/ECE6310_Computer_Vision/blob/master/GUI%20based%20interactive%20region%20growing/reg_grow.gif)
