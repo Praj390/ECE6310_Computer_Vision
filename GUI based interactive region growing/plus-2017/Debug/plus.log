@@ -1,0 +1,15 @@
+﻿cl : Command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  main.c
+c:\aue fall 20\computer vision\assignments\assignment4\plus-2017\main.c(88): warning C4047: 'function': 'BOOL *' differs in levels of indirection from 'BOOL **'
+c:\aue fall 20\computer vision\assignments\assignment4\plus-2017\main.c(88): warning C4024: 'GetDlgItemInt': different types for formal and actual parameter 3
+c:\aue fall 20\computer vision\assignments\assignment4\plus-2017\main.c(94): warning C4047: 'function': 'BOOL *' differs in levels of indirection from 'BOOL **'
+c:\aue fall 20\computer vision\assignments\assignment4\plus-2017\main.c(94): warning C4024: 'GetDlgItemInt': different types for formal and actual parameter 3
+c:\aue fall 20\computer vision\assignments\assignment4\plus-2017\main.c(475): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\aue fall 20\computer vision\assignments\assignment4\plus-2017\main.c(479): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\aue fall 20\computer vision\assignments\assignment4\plus-2017\main.c(480): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\aue fall 20\computer vision\assignments\assignment4\plus-2017\main.c(484): warning C4020: 'RegionGrow': too many actual parameters
+c:\aue fall 20\computer vision\assignments\assignment4\plus-2017\main.c(463): warning C4101: 'c': unreferenced local variable
+c:\aue fall 20\computer vision\assignments\assignment4\plus-2017\main.c(463): warning C4101: 'r': unreferenced local variable
+c:\aue fall 20\computer vision\assignments\assignment4\plus-2017\main.c(501): warning C4029: declared formal parameter list different from definition
+c:\aue fall 20\computer vision\assignments\assignment4\plus-2017\main.c(541): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  plus.vcxproj -> C:\AuE Fall 20\computer vision\Assignments\Assignment4\plus-2017\.\Debug\plus.exe
