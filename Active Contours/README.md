@@ -4,10 +4,11 @@
 2. The program uses 3 energies i.e 2 internal energy and 1 external energy.
 3. External energy is calculated by applyging Sobel filter gradient and taking inverse of the pixel value at each pixel location.
 4. First internal energy is calculated by follwing formula
-![]()
+![](https://github.com/Praj390/ECE6310_Computer_Vision/blob/master/Active%20Contours/internal_energy1.jpg)
 5. Second internal energy is the sqaure of the deviation from the average distance between the points. It can be found out by first calculating the average distance between all contour points, and then taking the square of the difference between that average and the distance between the current contour point and the next contour point.
 
 # Results
-![Original image]()
-![Image with initial contour points]()
-![Final image after appyling active contour algorithm]()
+![Original image](https://github.com/Praj390/ECE6310_Computer_Vision/blob/master/Active%20Contours/hawk.jpg)
+![Image after sobel filter](https://github.com/Praj390/ECE6310_Computer_Vision/blob/master/Active%20Contours/hawk_sobel.jpg)
+![Image with initial contour points](https://github.com/Praj390/ECE6310_Computer_Vision/blob/master/Active%20Contours/hawk_initial.jpg)
+![Final image after appyling active contour algorithm](https://github.com/Praj390/ECE6310_Computer_Vision/blob/master/Active%20Contours/hawk_final.jpg)
