@@ -8,8 +8,8 @@ Region growing should be used to segment regions, using the queue-based C code p
 
 # Results
 ## Original Image
-![]()
+![](https://github.com/Praj390/ECE6310_Computer_Vision/blob/master/Range%20image%20segmentation/original%20image.jpg)
 ## Threshold Image
-![]()
+![](https://github.com/Praj390/ECE6310_Computer_Vision/blob/master/Range%20image%20segmentation/threshold.jpg)
 ## Segmented Image
-![]()
+![](https://github.com/Praj390/ECE6310_Computer_Vision/blob/master/Range%20image%20segmentation/seg.jpg)
